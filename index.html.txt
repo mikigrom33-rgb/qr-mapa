@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zaštiæena Mapa</title>
+<script>
+function checkPassword() {
+    var pass = document.getElementById("password").value;
+    if(pass === "tajna123"){ // <- ovdje stavi svoju lozinku
+        window.location.href = "https://www.google.com/maps/search/?api=1&query=44.81773,17.19496";
+    } else {
+        alert("Pogrešna lozinka!");
+    }
+}
+</script>
+</head>
+<body>
+<h2>Unesite lozinku za mapu:</h2>
+<input type="password" id="password">
+<button onclick="checkPassword()">Otvori mapu</button>
+</body>
+</html>
